@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { FaGreaterThan } from "react-icons/fa";
-import style from "./card.module.css";
+import style from "./QuestionCard/card.module.css";
 
 const QuestionCard = ({ question }) => {
   console.log(question);

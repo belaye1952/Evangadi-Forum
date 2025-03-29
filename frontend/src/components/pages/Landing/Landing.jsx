@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Login from "../../components/Auth/Login";
-import Register from "../../components/Auth/Register";
+import Login from "../../Auth/Login";
+import Register from "../../Auth/Register";
 import styles from "./landing.module.css";
-import homeBg from "./../../assets/home-backgraund.png";
-import Layout from "../../components/Layout/Layout";
-import About from "../../components/About/About";
+import homeBg from "./../../../assets/home-background.png";
+import Layout from "../../Layout/Layout";
+import About from "../../About/About";
 // import { useSpring, animated } from 'react-spring';
 function Landing() {
   const [showLogin, setShowLogin] = useState(true);

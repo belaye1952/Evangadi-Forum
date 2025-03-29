@@ -2,8 +2,8 @@ import React, { useState, useRef } from "react";
 import classes from "./askQuestion.module.css";
 import AI from "@mui/icons-material/ArrowCircleRight";
 import { useNavigate } from "react-router-dom";
-import axiosConfig from "../../axiosConfig";
-import Layout from "../../components/Layout/Layout";
+import axiosConfig from "../../../axiosConfig";
+import Layout from "../../Layout/Layout";
 import {ClipLoader} from 'react-spinners';
 
 function AskQuestion() {

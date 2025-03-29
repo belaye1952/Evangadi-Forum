@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "../../axiosConfig";
+import axios from "../../../axiosConfig";
 import styles from "./AnswerPage.module.css";
-import Layout from "../../components/Layout/Layout";
+import Layout from "../../Layout/Layout";
 import { IoPersonCircleOutline } from "react-icons/io5";
 function AnswerPage() {
   const { questionid } = useParams();
