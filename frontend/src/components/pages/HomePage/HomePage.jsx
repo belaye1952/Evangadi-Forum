@@ -2,9 +2,9 @@ import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import style from "./HomePage.module.css";
 import { AppState } from "../../protectedRoute/ProtecedRoute";
-import QuestionCard from "../../QuestionCard";
+import QuestionCard from "../../QuestionCard/QuestionCard";
 import Layout from "../../Layout/Layout";
-import axiosConfig from "./../../../axiosConfig";
+import axiosConfig from "../../../axiosConfig";
 
 const HomePage = () => {
   const [questions, setQuestions] = useState([]);

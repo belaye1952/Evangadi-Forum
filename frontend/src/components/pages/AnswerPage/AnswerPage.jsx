@@ -116,8 +116,3 @@ function AnswerPage() {
 }
 
 export default AnswerPage;
-
-// <div key={answer?.answerid} className={`${styles.answer} ${styles.fadeIn}`}>
-//   <p className={styles.answerText}>{answer?.content}</p>
-//   <p className={styles.answerAuthor}>By: {answer?.user_name}</p>
-// </div>;

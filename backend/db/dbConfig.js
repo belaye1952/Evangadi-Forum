@@ -1,12 +1,11 @@
 const mysql2 = require("mysql2");
 
 const dbconnection = mysql2.createPool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
-  connectionLimit:  10,
-  port: process.env.DB_PORT
+  user: "sql8771655",
+  host: "sql8.freesqldatabase.com",
+  password:"VYn5nQ2jya",
+  database: "sql8771655",
+  port: 3306
 });
 
 module.exports = dbconnection.promise();
