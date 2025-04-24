@@ -1,30 +1,26 @@
-import React from "react";
-import styles from "./about.module.css";
-function About() {
-  return (
-    <section>
-      <section className={styles.evangadi_question_answer}>
-        <span>About</span>
-        <div className={styles.question_paragraph}>
-          <h1>Evangadi Networks Q&A</h1>
-          <p>
-            No matter what stage of life you are in whether you're just starting
-            elementary school or being promoted to CEO of a Fortune 500 company,
-            you have much to offer to those who are trying to follow in your
-            footsteps.
-          </p>
-          <p>
-            Wheather you are willing to share your knowledge or you are just
-            looking to meet mentors of your own, please start by joining the
-            network here.
-          </p>
+import React from 'react'
+import style from './About.module.css'
+import { Link } from 'react-router-dom'
+
+const About = () => {
+    return (
+        <div className={style.description__container}>
+            <h4>About</h4>
+            <h2>Evangadi Networks Q&A</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem voluptate officiis beatae nobis pariatur omnis facere accusamus laborum hic, adipisci vero reiciendis, recusandae sit ad, eum quisquam! Molestias, commodi!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem voluptate officiis beatae nobis pariatur omnis facere accusamus laborum hic, adipisci vero reiciendis, recusandae sit ad, eum quisquam! Molestias, commodi!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullam ipsum, provident minus laudantium esse soluta maiores nostrum nisi sunt perferendis dolorum. Praesentium necessitatibus qua consectetur sunt tempora simus eveniet voluptates?
+            </p>
+            <Link to="/howItWorks">
+                <button className={style.how__it__works}>HOW IT WORKS</button>
+            </Link>
         </div>
-        <div className={styles.how_it_works}>
-          <button>HOW IT WORKS</button>
-        </div>
-      </section>
-    </section>
-  );
+    )
 }
 
-export default About;
+export default About

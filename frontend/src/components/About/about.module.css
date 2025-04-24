@@ -1,51 +1,79 @@
-/* ----------- Heading Styles ----------- */
-.question_paragraph h1 {
-    font-size: 32px;
-    color: #e33f00;
-    font-weight: bold;
+/* Description Container (Right Column) */
+.description__container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.description__container h5 {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.description__container h2 {
+  font-size: 28px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.description__container p {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.description__container h4 {
+  color: #e55a00;
+}
+
+/* How It Works Button */
+.how__it__works {
+  background-color: #ff6200;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.how__it__works:hover {
+  background-color: #e55a00;
+}
+
+@media (max-width: 768px) {
+  .description__container {
+    max-width: 100%;
+    text-align: center;
   }
-  
-  .question_paragraph p {
-    color: #67748e;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-top: 20px;
+
+  .description__container h2 {
+    font-size: 24px;
   }
-  
-  .how_it_works {
-    margin: 30px 0;
-    margin-left: 30px;
-    margin-bottom: 40px;
+
+  .how__it__works {
+    width: 100%;
+    padding: 12px;
   }
-  
-  .how_it_works button {
-    background-color: #ff8000;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .description__container h5 {
+    font-size: 12px;
   }
-  
-  /* Hover Effect */
-  .how_it_works button:hover {
-    background-color: #e67300;
+
+  .description__container h2 {
+    font-size: 20px;
   }
-  .evangadi_questiona_answer {
-    padding: 0 30px;
+
+  .description__container p {
+    font-size: 12px;
   }
-  .evangadi_questiona_answer span {
-    color: #fe8303;
+
+  .how__it__works {
+    font-size: 12px;
   }
-  @media (min-width: 870px) {
-    .question_paragraph p {
-      font-size: 19px;
-    }
-    .evangadi_questiona_answer {
-    padding: 30px 70px 0  30px;
-  }
-  }
+}

@@ -1,46 +1,45 @@
-import React from 'react';
-import { FaFacebook } from 'react-icons/fa';
-import {IoLogoInstagram} from 'react-icons/io5';
-import {BsYoutube} from "react-icons/bs";
-import styles from "./footer.module.css";
-import logo from "../../assets/evangadi-logo-footer .png";
-function Footer() {
-  return (
-    <>
-<div className={styles.outer_container}>
-      <div className={styles.logo}size={1}>
-          <img src={logo}alt="logo" />
+import React from 'react'
+import { FiFacebook } from "react-icons/fi";
+import { FiInstagram } from "react-icons/fi";
+import { FiYoutube } from 'react-icons/fi';
+import logo from '../../assets/images/footerLogo.png'
+import style from './Footer.module.css'
 
-        <div className={styles.social}>
-         <FaFacebook size={27}/>
-        <IoLogoInstagram size={27}/>
-         <BsYoutube size={27}/>
-        </div>
-      </div>
+const Footer = () => {
+    return (
+        // footer container
+        <footer className={style.footer__container}>
+            {/* first div */}
+            <div className={style.footer__logo}>
+                <img src={logo} alt="Evangadi logo" />
+                <ul>
+                    <li><a href="#"><FiFacebook /></a></li>
+                    <li><a href="#"><FiInstagram /></a></li>
+                    <li><a href="#"><FiYoutube /></a></li>
+                </ul>
+            </div>
 
-<div className={styles.links}>
-          
-          <ul>
-            <li><h3>Useful Link</h3></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>cd
-        </div>
+            {/* second div */}
+            <div className={style.footer__links}>
+                <ul>
+                    <li><h2>Useful Links</h2></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
 
-        <div className={styles.links}>
-          <ul>
-            <li><h3>Contact info</h3></li>
-            <li>Evangadi Networks</li>
-            <li>support@evangadi.com</li>
-            <li>+1-202-386-2702</li>
-          </ul>
-    
-        </div>
-      </div>
-  </>
- 
-  )
+            {/* third div */}
+            <div className={style.footer__contact}>
+                <ul>
+                    <li><h2>Contact Info</h2></li>
+                    <li><a href="#">Evangadi Network</a></li>
+                    <li><a href="#">support@evangadi.com</a></li>
+                    <li><a href="#" tel="9876543210">+91 9876543210</a></li>
+                </ul>
+            </div>
+        </footer>
+    )
 }
 
 export default Footer
